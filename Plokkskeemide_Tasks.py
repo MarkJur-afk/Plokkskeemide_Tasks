@@ -12,8 +12,8 @@
 # from ast import While
 
 
-for õ in range (20):
-     print(f"Sooritab eksamit {õ+1}, õpilane")
+for Ãµ in range (20):
+     print(f"Sooritab eksamit {Ãµ+1}, Ãµpilane")
      for e in range (3):
          print(f"{e+1}. eksaam")
 
@@ -74,5 +74,5 @@ for i in range(1, cutlets + 1):
      time.sleep(time)  
      print(f"Cotlets {i} ready!")
 
- print("all cotlets is ready")
+print("all cotlets is ready")
 
