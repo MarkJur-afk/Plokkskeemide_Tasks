@@ -1,15 +1,15 @@
-# from time import *
-# print("Enter numbers: a b c")
-# a = float(input("Number a: "))
-# b = float(input("Number b: "))
-# c = float(input("Number c: "))
+from time import *
+print("Enter numbers: a b c")
+a = float(input("Number a: "))
+b = float(input("Number b: "))
+c = float(input("Number c: "))
 
-# if a > 0 and b > 0 and c > 0:
-#     summ = a + b + c
-#     print(f"Sum of your numbers is {summ}!")
+if a > 0 and b > 0 and c > 0:
+    summ = a + b + c
+    print(f"Sum of your numbers is {summ}!")
 
-#V5 3 task
-# from ast import While
+V5 3 task
+from ast import While
 
 
 for õ in range (20):
@@ -75,4 +75,43 @@ for i in range(1, cutlets + 1):
      print(f"Cotlets {i} ready!")
 
 print("all cotlets is ready")
+
+#Minu plokkskeemid
+#V1 task3
+while True:
+    try:
+        tund = int(input("Kirjutage tund (0-23): "))
+        if 0 <= tund < 24:
+            break
+        else:
+            print("Viga, kirjutage number 0 kuni 23")
+    except ValueError:
+        print("Viga, kirjutage täisarv")
+
+if 5 <= tund < 12:
+    time = "hommik"
+elif 12 <= tund < 18:
+    time = "päev"
+elif 18 <= tund < 22:
+    time = "õhtu"
+else:
+    time = "öö"
+
+print(f"Tere, paegun {time}!")
+
+#V3 task1
+Q = int(input("Kirjuta count of numbers: "))
+summ = 0
+count = 0
+while count < Q:
+    try:
+        num = float(input(f"Kirjuta number {count + 1}: "))
+        if num > 0:
+            summ += num
+        count += 1
+        break
+    except ValueError:
+        print("Viga kirjuta taisarv")
+print(f"Summa of numbers: {summ}")
+
 
